@@ -17,16 +17,10 @@
       %nav.navbar.navbar-default
         .content
           .navbar-header
-            = link_to image_tag("logo-orange.png"), root_path, class: 'navbar-brand', alt: 'Loomio'
+            = link_to image_tag("logo-okcep.png"), root_path, class: 'navbar-brand', alt: 'OKCEP'
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a{href: 'https://github.com/loomio/loomio'}
-                %i.fa.fa-github
-            %li
-              %a{href: 'https://twitter.com/Loomio'}
-                %i.fa.fa-twitter
-            %li
-              %a{href: 'https://www.facebook.com/Loomio'}
+              %a{href: 'https://www.facebook.com/okcep'}
                 %i.fa.fa-facebook
             %li= link_to t(:'frontpage.link.press'), 'http://blog.loomio.org/press-pack', class: 'press'
             %li= link_to t(:'frontpage.link.blog'), blog_path, class: 'blog'
@@ -36,8 +30,9 @@
       .row.hero
         .content-container
           .content
-            %h1.header Oklahoma Coalition To End Prohibition
+            =image_tag 'globe.png', class: 'image'
+            %h1.header OKCEP
             %h2.subhead Legalize it, Together.
-            %p.hero-text.description= t(:'frontpage.hero.desc')
+            %p.hero-text.description Make decisions together, build consensus, and lead the effort to Legalize marijuana in Oklahoma.
 
     = javascript_include_tag "marketing"
