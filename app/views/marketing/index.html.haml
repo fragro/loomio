@@ -2,7 +2,7 @@
 %html{locale: current_locale}
   %head
     %meta{content: "IE=Edge", "http-equiv" => "X-UA-Compatible"}/
-    %title Loomio | #{t(:'frontpage.title.collaborative_decision_making')}
+    %title OKCEP
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
     = stylesheet_link_tag  "marketing"
     = csrf_meta_tags
@@ -36,28 +36,8 @@
       .row.hero
         .content-container
           .content
-            =image_tag 'globe.png', class: 'image'
-            %h1.header= t(:'frontpage.hero.head_html')
-            %h2.subhead= t(:'frontpage.hero.subhead')
+            %h1.header Oklahoma Coalition To End Prohibition
+            %h2.subhead Legalize it, Together.
             %p.hero-text.description= t(:'frontpage.hero.desc')
-            =link_to 'https://love.loomio.org', class: 'btn btn-teal btn-lg hero-text js-not-yet-button' do
-              = t(:'frontpage.link.crowdfunding')
-              %i.fa.fa-angle-right
-
-      .row.footer
-        .content
-          %ul
-            %li
-              %a{href: '#'}
-                = t :'frontpage.link.top'
-                %i.fa.fa-angle-up
-          %ul.pull-right
-            %li= link_to t(:'frontpage.link.public_groups'), public_groups_path
-            %li= link_to t(:'frontpage.link.terms'), terms_of_service_path
-            %li= link_to t(:'frontpage.link.privacy'), privacy_path
-            %li.enspiral
-              %a{href: 'http://www.enspiral.com'}
-                = image_tag 'enspiral.png', alt: 'Enspiral'
-
 
     = javascript_include_tag "marketing"
